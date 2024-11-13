@@ -20,12 +20,11 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
-console.log("MongoDB URL: ", process.env.MONGO_URL ? "Loaded" : "Not Loaded");
-
 // ---------- Connection with MongoDB
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 let dbUrl = process.env.ATLASDB_URL;
+console.log("MongoDB URL: ", process.env.ATLASDB_URL);
 
 main()
   .then((res) => {
