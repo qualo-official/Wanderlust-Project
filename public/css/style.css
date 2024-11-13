@@ -27,6 +27,8 @@ body {
 }
 
 #addListingBtn {
+  padding-left: 14px;
+  padding-right: 14px;
   margin-right: 10px;
   border-radius: 20px;
 }
