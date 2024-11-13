@@ -21,6 +21,8 @@ const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 const MongoStore = require("connect-mongo");
 
+console.log("MongoDB URL: ", process.env.MONGO_URL ? "Loaded" : "Not Loaded");
+
 // ---------- Connection with MongoDB
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
