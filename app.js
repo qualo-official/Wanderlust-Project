@@ -14,12 +14,11 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/users.js");
-const mongoStore = require("connect-mongo");
+const MongoStore = require("connect-mongo");
 
 const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
-const MongoStore = require("connect-mongo");
 
 console.log("MongoDB URL: ", process.env.MONGO_URL ? "Loaded" : "Not Loaded");
 
