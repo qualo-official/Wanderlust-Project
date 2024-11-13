@@ -1,0 +1,222 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+
+.navbar {
+  /* min-height: 5rem; */
+  padding: 1rem 0;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222;
+}
+
+#addListingBtn {
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+#addListingBtn:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.btn-search {
+  width: 41px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fe424d;
+}
+
+input[type="search"] {
+  width: 16rem;
+  border-radius: 30px;
+}
+
+.btn-search i {
+  color: white;
+}
+
+.btn-search:hover {
+  background-color: #f31a29;
+}
+
+/* Footer */
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info-links a {
+  margin-right: 1rem;
+}
+
+.f-info {
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cards */
+
+.listing-link {
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.listing-card {
+  border: none;
+}
+
+.card-img-top {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* New Page */
+
+#price-inp::-webkit-outer-spin-button,
+#price-inp::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.add-btn {
+  background-color: #fe424d;
+  border: none;
+}
+
+/* Edit Page */
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none;
+}
+
+/* Show Page */
+
+.show-heading,
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.show-card .card-text {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
+
+.show-card .card-text b {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+  padding-left: 0;
+}
+
+/* MapBox */
+
+#map {
+  height: 400px;
+  width: 40vh;
+}
+
+/* Index (Icons List - filters) */
+
+#filters {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.filter {
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.filter:hover {
+  opacity: 1;
+}
+
+.filter p {
+  font-size: 0.8rem;
+}
+
+.displayTaxInfo {
+  display: none;
+}
+
+.tax-toggle {
+  color: #5e5e5e;
+  height: 3rem;
+  border-radius: 32px;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+  padding: 11px 16px 0px 14px;
+  border: 1px solid #5e5e5e;
+}
+
+.tax-toggle label {
+  text-wrap: nowrap;
+}
